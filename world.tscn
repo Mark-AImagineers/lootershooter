@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://n4254f1o4bcc"]
+
+[ext_resource type="PackedScene" uid="uid://rjfkrjrbiver" path="res://Character/character_body_2d.tscn" id="1_2sk38"]
+
+[node name="World" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_2sk38")]
+position = Vector2(448, 256)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position_smoothing_enabled = true
+position_smoothing_speed = 7.0
+rotation_smoothing_enabled = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 424.0
+offset_top = 160.0
+offset_right = 478.0
+offset_bottom = 183.0
+text = "testing
+"
